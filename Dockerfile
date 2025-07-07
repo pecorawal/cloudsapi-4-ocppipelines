@@ -1,4 +1,5 @@
-FROM golang:alpine AS builder
+#FROM golang:alpine AS builder
+FROM quay.io/theauthgear/golang AS builder
 WORKDIR /app
 COPY ./clouds.go ./clouds_test.go ./go.mod ./
 RUN go get clouds
