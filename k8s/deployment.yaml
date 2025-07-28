@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
 #        - image: image-registry.openshift-image-registry.svc:5000/clouds-build/clouds-api:latest
-        - image: default-route-openshift-image-registry.apps.qmcm57yune3f2c5cce.eastus.aroapp.io/clouds-build/clouds-api:latest
+        - image: quay.io/saa-latam/clouds-api:latest
           imagePullPolicy: Always
           name: clouds-api
           ports:
